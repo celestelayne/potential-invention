@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background: beige;
+}
+
+body {
+    min-height: 100vh;
+}
+
+header, footer, main {
+    padding: 20px;
+    border: 2px solid black;
+    color: black;
+}
+
+header, footer {
+    height: 10vh;
+}
+
+main {
+    height: 80vh;
+}
