@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+  }
+  
+  header,
+  footer {
+    height: 60px;
+  }
+  
+  section {
+    /* Optional: grid-row: 2; (implicit) */
+  }
+  
+  footer {
+      background: repeating-linear-gradient(
+      45deg,
+      #000,
+      #000 10px,
+      #ffed00 10px,
+      #ffed00 20px
+    );
+    line-height: 60px;
+  }
+  
+  marquee {
+    font-weight: bold;
+    font-size: 1.2rem;
+    width: 100%;
+  }
+  
+  span {
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    margin: 0 30px;
+  }
