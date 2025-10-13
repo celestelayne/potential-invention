@@ -10,20 +10,32 @@ body {
     background: beige;
 }
 
-body {
-    min-height: 100vh;
+.container {
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 header, footer, main {
     padding: 20px;
-    border: 2px solid black;
+    background-color: white;
     color: black;
 }
 
-header, footer {
-    height: 10vh;
+header h1 {
+    font-family: "Libre Baskerville", serif;
+    text-transform: capitalize;
+    font-size: 3.68em;
+    line-height: 1.4em;
 }
 
-main {
-    height: 80vh;
+.pullquote {
+    font-style: italic;
+    font-size: 1.3em;
+    color: #d64545;
+    margin: 35px 0;
+    font-weight: bold;
+}
+
+main p {
+    line-height: 1.6em;
 }
