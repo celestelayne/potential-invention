@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* NOTE :: The <body> tag looks to its parent (the <html> tag) for how to scale the dynamic property, so the HTML element needs to have its height set as well. */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.68em;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    padding: 24px;
+}
+
+.main {
+    /* width: 70%; */
+    height: 100%;
+    /* padding: 24px; */
+}
+
+.sidebar {
+    height: 100%;
+    padding: 24px;
+}
+
+.neon {
+    color: #00d200;
+    text-decoration: none;
+}
+
+.register {
+    text-transform: uppercase;
+}
+
+.underline {
+    border-bottom: 3px solid #00d200;
+    width: 45%;
+}
