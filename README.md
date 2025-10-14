@@ -2,7 +2,9 @@
 
 ARCH A4988 | Coding for Spatial Practices | Fall 2025
 
-Link to my ☀️☀️☀️ 🌱🌱🌱 [Digital Garden](https://celestelayne.github.io/potential-invention/) 🌿🌿🌿 ☀️☀️☀️ 
+![Personal Webcraft Landing Page](./homepage/assets/personal-webcraft-landing-page.png "Personal Webcraft")
+
+Link to my ☀️☀️☀️ 🌱🌱🌱 [Personal Webcraft Landing Page](https://celestelayne.github.io/potential-invention/) 🌿🌿🌿 ☀️☀️☀️ 
 
 ### Course Description
 
