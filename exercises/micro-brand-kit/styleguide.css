@@ -131,7 +131,7 @@ footer {
   }
   
   a {
-    color: var(--color-primary);
+    color: var(--color-primary); /* this is dark red*/
     text-decoration: none;
     transition: color var(--transition-fast);
   }
