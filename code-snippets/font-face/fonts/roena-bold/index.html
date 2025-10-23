@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    /*
+      Roena is a font with a bold, cheerful, and expressive style designed to bring a fun vibe to every design. Its unique, rounded, and daring letterforms make it perfect for kids’ event posters, food & beverage packaging, creative branding, social media content, and even titles or headers that need to stand out and feel playful.
+    */
+    @font-face {
+      font-family: 'Roena'; /* Choose a name for your font family */
+      src: url('./Roena-Demo.otf') format('opentype'); /* Specify the path and format */
+      font-weight: normal; /* Optional: Define font weight (e.g., normal, bold) */
+      font-style: normal; /* Optional: Define font style (e.g., normal, italic) */
+      font-display: swap; /* Optional: Controls how the font loads and displays */
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roena', sans-serif; /* Apply the custom font, with a fallback */
+    }
+
+    h1 {
+      text-align: center;
+      color: tomato;
+    }
+
+    .size-small { font-size: 1em; }
+    .size-medium { font-size: 1.4em; }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Font Ramp Example</h1>
+    <div class="font-ramp-item size-small">Small Text</div>
+    <div class="font-ramp-item size-medium">Medium Text</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    /*
+      Rebak is an experimental display font with bold geometric shapes, ideal for posters, logos, and modern visual projects. 
+    */
+    @font-face {
+      font-family: 'Rebak Regular'; /* Choose a name for your font family */
+      src: url('./Rebak-Regular.ttf') format('truetype'); /* Specify the path and format */
+      font-weight: normal; /* Optional: Define font weight (e.g., normal, bold) */
+      font-style: normal; /* Optional: Define font style (e.g., normal, italic) */
+      font-display: swap; /* Optional: Controls how the font loads and displays */
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Rebak Regular', sans-serif; /* Apply the custom font, with a fallback */
+      padding: 2em;
+    }
+
+    h1 {
+      color: tomato;
+      font-size: 3em;
+    }
+    
+    .font-ramp-item {
+      text-align: center;
+      color: tomato;
+      margin-bottom: 0.4em;
+    }
+
+    .size-small { font-size: 1em; }
+    .size-medium { font-size: 2em; }
+    .size-large { font-size: 3em; }
+    .size-xtra-large { font-size: 4em; }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="font-ramp-item">Font Ramp</h1>
+    <div class="font-ramp-item size-xtra-large">Extra Large Text</div>
+    <div class="font-ramp-item size-large">Large Text</div>
+    <div class="font-ramp-item size-medium">Medium Text</div>
+    <div class="font-ramp-item size-small">Small Text</div>
+  </div>
+</body>
+</html>
