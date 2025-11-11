@@ -99,20 +99,26 @@ p.pullquote {
 }
 
 @media (min-width: 960px) {
+  /* On wider screens switch the content columns from flexbox to CSS Grid */
   main {
-    display: flex;
-    flex-direction: column;
+    /* keep normal flow; sections will handle the grid layout */
+    display: block;
   }
+
+  /* Use CSS Grid to create two equal columns inside each section */
   section {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
     min-height: 0;
+    align-items: start;
   }
 
   .column {
     padding: 10px 20px;
-    display: flex;
-    flex-direction: column;
-    width: 50%;
+    /* remove the previous flexbox layout; let grid handle the columns */
+    display: block;
+    width: auto;
   }
 
   h1 {
