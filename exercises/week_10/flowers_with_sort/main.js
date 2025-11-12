@@ -12,6 +12,7 @@ ul.innerHTML = "<li>Loading countries...</li>";
 fetch("https://restcountries.com/v3.1/all?fields=name,flags")
   .then((response) => response.json())
   .then((data) => {
+    console.log(data)
     // Sort initially by name (ascending)
     countries = data.sort((a, b) =>
       a.name.common.localeCompare(b.name.common)

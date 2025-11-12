@@ -35,16 +35,17 @@ const ul = document.querySelector("ul");
 
 /*
     Step 6. Make the filters work
-    const filterBtns = document.querySelector(".filters");
-    const cards = document.querySelectorAll(".card");
-*/
+    */
+  const filterBtns = document.querySelector(".filters");
+  // console.log(filterBtns)
+  // const cards = document.querySelectorAll(".card");
 
 // Step 3. Write a function that loops through the array and builds one <li> per flower:
 function renderFlowersToPage(flowersArray) {
   for (let i = 0; i < flowersArray.length; i++) {
     // 1. create the li
     const listItem = document.createElement("li");
-    listItem.classList.add(flowersArray[i].color, "card", `item--${i}`);
+    listItem.classList.add(flowersArray[i].color, "card", "show");
 
     // 2. create title
     const title = document.createElement("h3");
@@ -100,6 +101,35 @@ renderFlowersToPage(flowers);
 
     filterBtns.addEventListener("click", filterFn);
 */
+
+function filterFn(e) {
+  console.log(e.target);
+  if (e.target.classList.contains("filter-btn")) {
+    // remove active class from current button
+    filterBtns.querySelector(".active").classList.remove("active");
+    // add to the clicked one
+    e.target.classList.add("active");
+
+    const filterValue = e.target.getAttribute("data-filter");
+    
+    // query cards here so we get the elements that were just rendered
+    const cards = document.querySelectorAll(".card");
+
+    for (let i = 0; i < cards.length; i++) {
+      console.log(cards[i])
+
+      if(cards[i].classList.contains(filterValue) || filterValue === "all") {
+        cards[i].classList.remove("hide");
+        cards[i].classList.add("show");
+      } else {
+        cards[i].classList.remove("show");
+        cards[i].classList.add("hide");
+      }
+    }
+  }
+}
+
+filterBtns.addEventListener("click", filterFn); 
 
 // Step 8. Test the filters by clicking the buttons!
 

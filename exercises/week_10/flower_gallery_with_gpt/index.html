@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Flower Gallery</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="filters" role="toolbar" aria-label="Filter flowers">
+				<button type="button" data-filter="yellow">Yellow</button>
+				<button type="button" data-filter="red">Red</button>
+				<button type="button" data-filter="blue">Blue</button>
+				<button type="button" data-filter="all">All</button>
+			</div>
+
+			<section class="list" aria-label="Flower list">
+				<ul id="flower-list">
+					<!-- JS will populate this list -->
+				</ul>
+			</section>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
